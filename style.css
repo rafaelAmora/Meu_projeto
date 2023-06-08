@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px; /*preenchemento interno da caixa*/
+  box-sizing: border-box; /*A medida do tamanho da caixa  para ser medida atraves da borda*/
+}
+
+body {
+  background-image: url(./imagens/bg-mobile.jpg); /*coloca a imagem de fundo*/
+  background-repeat: no-repeat; /*Não repeti a imagem varias vezes*/
+  background-position: top center; /*deixa centralizada no meio*/
+
+  background-size: cover; /*preenche todo espaço visivel/tela toda*/
+}
+
+#caixa_principal {
+  border: 2px solid red;
+  width: 366px; /* Largura*/
+  margin: 56px auto 0px;
+  height: auto;
+
+  /*padding: 100px; preenchemento interno da caixa*/
+  padding: 0px 24px;
+  max-width: 400px;
+}
+
+#imagem img {
+  width: 130px; /*Largura da imagem*/
+  display: block; /*Ativar para centralizar a imagem, pega o elemento e da toda a largura de dela*/
+  margin: auto;
+  padding: 20px auto auto auto;
+}
+#list {
+  color: rgb(41, 41, 40);
+  text-align: center;
+  font-weight: 500; /*É o negrito*/
+  line-height: 24px; /*Altura da linha*/
+  margin-top: 10px; /*distancia entre a foto eo @*/
+}
+ul li {
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px; /*raio das bordas*/
+  padding: 16px 12px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px); /*coloca um desfoco na caixa*/
+
+  text-decoration: none; /*Tira a linha de baixo das palavras*/
+  transition: background 0.2s;
+  color: rgb(255, 252, 252);
+}
+ul {
+  list-style: none; /*Tira os pontos da lista*/
+  flex-direction: column; /*Ele faz com que os elementos fiquem um a baixo do outro*/
+  display: flex; /*Ele deixa os elementos dentro da caixa , fiquem um ao lado ou em baixo do outro*/
+
+  gap: 16px; /*Coloca espaço entre os elementos*/
+  padding: 24px 0px;
+}
+
+#insta p {
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(240, 239, 239);
+  font-size: 18px;
+}
+#insta {
+  text-decoration: none;
+}
+
+.insta {
+  text-decoration: none;
+}
+
+ul li:hover {
+  border: 1.5px solid white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+}
+footer {
+  text-align: center;
+  padding: 24px 0px;
+  color: white;
+}
+#seta img {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  border-radius: 50px;
+}
+#seta img:hover{
+  border: 5px solid rgb(100, 101, 151);
+  
+ 
+}
