@@ -40,7 +40,7 @@ body.light {
 }
 
 
- .insta li {
+ .face li {
  
   border-radius: 8px; /*raio das bordas*/
   padding: 16px 12px;
@@ -50,19 +50,32 @@ body.light {
 
   text-decoration: none; /*Tira a linha de baixo das palavras*/
   transition: background 0.2s;
-  
-  
-}
-.face{
-  color: rgb(255, 252, 252);
+   color: rgb(252, 250, 250);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(255, 255, 255, 0.1);
+  
+  
+  
 }
-.face.light{
-  color: rgb(10, 10, 10);
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.1);
+.face.light li {
+ 
+  border-radius: 8px; /*raio das bordas*/
+  padding: 16px 12px;
+  gap: 10px;
+  
+  backdrop-filter: blur(4px); /*coloca um desfoco na caixa*/
+
+  text-decoration: none; /*Tira a linha de baixo das palavras*/
+  transition: background 0.2s;
+   color: rgb(7, 7, 7);
+  border: 1.5px solid rgba(3, 3, 3, 0.5);
+  background-color: rgba(12, 12, 12, 0.1);
+  
+  
+  
 }
+
+
 
 ul {
   list-style: none; /*Tira os pontos da lista*/
@@ -71,6 +84,7 @@ ul {
 
   gap: 16px; /*Coloca espaço entre os elementos*/
   padding: 24px 0px;
+  
 }
 
 
@@ -93,10 +107,16 @@ ul {
   text-decoration: none;
 }
 
-ul li:hover {
+
+.face ul li:hover {
   border: 1.5px solid white;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
+}
+.face.face.light ul li:hover {
+  border: 1.5px solid rgb(110, 109, 109);
+  border-radius: 8px;
+  background: rgba(58, 51, 51, 0.05);
 }
 .footer {
   text-align: center;

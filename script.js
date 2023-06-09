@@ -4,9 +4,10 @@ const body = document.getElementById("body");/* Busca a id*/
 const btt = document.querySelector(".button-seta"); /*busca a clss*/ 
 const caixa = document.querySelector(".caixa_principal");
 const seta = document.querySelector(".button-seta");
-const footer = document.querySelector(".footer")
-const insta = document.querySelector(".social")
-const lista = document.querySelector(".face")
+const footer = document.querySelector(".footer");
+const insta = document.querySelector(".social");
+const lista = document.querySelector(".face");
+
 
 
 btt.addEventListener('click', () => {
