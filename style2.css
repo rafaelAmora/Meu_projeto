@@ -5,15 +5,16 @@
 }
 
 body {
-  background-color: rgb(38, 39, 40);
+ background: url(./imagens/bg-mobile.jpg) no-repeat top center/cover;
+ 
 }
 
 body.light {
-  background-color: aliceblue;
+ background: url(./imagens/bg-desktop-light.jpg);
 }
 
 .caixa_principal {
-  border: 2px solid red;
+  
   width: 366px; /* Largura*/
   margin: 56px auto 0px;
   height: auto;
@@ -22,9 +23,7 @@ body.light {
   padding: 0px 24px;
   max-width: 400px;
 }
-.caixa_principal.light {
-  background-color: rgb(111, 0, 255);
-}
+
 
 .imagem img {
   width: 130px; /*Largura da imagem*/
@@ -33,24 +32,38 @@ body.light {
   padding: 20px auto auto auto;
 }
 .list {
-  color: rgb(41, 41, 40);
+ 
   text-align: center;
   font-weight: 500; /*É o negrito*/
   line-height: 24px; /*Altura da linha*/
   margin-top: 10px; /*distancia entre a foto eo @*/
 }
-ul li {
-  border: 1.5px solid rgba(255, 255, 255, 0.5);
+
+
+ .insta li {
+ 
   border-radius: 8px; /*raio das bordas*/
   padding: 16px 12px;
   gap: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  
   backdrop-filter: blur(4px); /*coloca um desfoco na caixa*/
 
   text-decoration: none; /*Tira a linha de baixo das palavras*/
   transition: background 0.2s;
-  color: rgb(255, 252, 252);
+  
+  
 }
+.face{
+  color: rgb(255, 252, 252);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.face.light{
+  color: rgb(10, 10, 10);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 ul {
   list-style: none; /*Tira os pontos da lista*/
   flex-direction: column; /*Ele faz com que os elementos fiquem um a baixo do outro*/
@@ -60,16 +73,22 @@ ul {
   padding: 24px 0px;
 }
 
-.insta p {
+
+.social p {
   text-align: center;
   margin-top: 15px;
-  color: rgb(240, 239, 239);
+  color: rgb(250, 249, 249);
   font-size: 18px;
 }
-.insta {
+.social {
   text-decoration: none;
 }
-
+.social.light p{
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(7, 7, 7);
+  font-size: 18px;
+}
 .insta {
   text-decoration: none;
 }
@@ -79,24 +98,34 @@ ul li:hover {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
 }
-footer {
+.footer {
   text-align: center;
   padding: 24px 0px;
   color: white;
 }
-#seta img {
+.footer.light {
+  text-align: center;
+  padding: 24px 0px;
+  color: rgb(22, 21, 21);
+}
+.button-seta img {
   position: fixed;
-  left: 0;
+   right: 0;
   top: 50%;
   width: 50px;
   border-radius: 50px;
 }
-#seta img:hover {
-  border: 5px solid rgb(100, 101, 151);
+.button-seta.light img {
+  position: fixed;
+   left: 0;
+  top: 50%;
+  width: 50px;
+  border-radius: 50px;
+  transform: rotate(180deg);/*Rotaciona a seta em 180 deg*/
 }
+  
 
-.button-color {
-  background-color: aqua;
-  width: 100%;
-  height: 50px;
-}
+
+
+
+
